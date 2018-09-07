@@ -1,17 +1,45 @@
 package com.swu.chen.entity;
 
-public class User {
+import java.io.Serializable;
 
-        private Integer id;
-        private String name;
-        private Integer age;
-        private String email;
+import com.baomidou.mybatisplus.activerecord.Model;
+import java.io.Serializable;
 
-    public Integer getId() {
+/**
+ * <p>
+ * 
+ * </p>
+ *
+ * @author chen123
+ * @since 2018-09-07
+ */
+public class User extends Model<User> {
+
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * 主键ID
+     */
+    private Long id;
+    /**
+     * 姓名
+     */
+    private String name;
+    /**
+     * 年龄
+     */
+    private Integer age;
+    /**
+     * 邮箱
+     */
+    private String email;
+
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -37,5 +65,20 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    protected Serializable pkVal() {
+        return this.id;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+        ", id=" + id +
+        ", name=" + name +
+        ", age=" + age +
+        ", email=" + email +
+        "}";
     }
 }

@@ -1,17 +1,16 @@
 package com.swu.chen.service;
 
 import com.swu.chen.entity.User;
-import com.swu.chen.mapper.UserMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.baomidou.mybatisplus.service.IService;
 
-@Service
-public class UserService {
-    @Autowired
-    private UserMapper userMapper;
+/**
+ * <p>
+ *  服务类
+ * </p>
+ *
+ * @author chen123
+ * @since 2018-09-07
+ */
+public interface UserService extends IService<User> {
 
-    public User test(){
-        User user = userMapper.selectById(6);
-        return user;
-    }
 }
