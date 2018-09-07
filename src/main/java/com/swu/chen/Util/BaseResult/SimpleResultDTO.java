@@ -1,5 +1,8 @@
 package com.swu.chen.Util.BaseResult;
 
+import lombok.Data;
+
+@Data
 public class SimpleResultDTO {
     private boolean status;
     private String reason;
@@ -19,27 +22,4 @@ public class SimpleResultDTO {
         this.reason = reason;
     }
 
-    public boolean isStatus() {
-        return status;
-    }
-
-    public void setStatus(boolean status) {
-        this.status = status;
-    }
-
-    public String getReason() {
-        return reason;
-    }
-
-    public void setReason(String reason) {
-        this.reason = reason;
-    }
-
-    public Object getDetail() {
-        return detail;
-    }
-
-    public void setDetail(Object detail) {
-        this.detail = detail;
-    }
 }
