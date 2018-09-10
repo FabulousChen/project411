@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swu.chen.mapper.PersoninfoMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.swu.chen.entity.Personinfo">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="sex" property="sex" />
+        <result column="college" property="college" />
+        <result column="grade" property="grade" />
+        <result column="class" property="class" />
+        <result column="student_id" property="studentId" />
+        <result column="dormitory_id" property="dormitoryId" />
+        <result column="create_time" property="createTime" />
+        <result column="last_edit_time" property="lastEditTime" />
+        <result column="is_delete" property="isDelete" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, sex, college, grade, class, student_id AS studentId, dormitory_id AS dormitoryId, create_time AS createTime, last_edit_time AS lastEditTime, is_delete AS isDelete
+    </sql>
+
+</mapper>

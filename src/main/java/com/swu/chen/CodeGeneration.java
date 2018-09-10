@@ -20,7 +20,7 @@ public class CodeGeneration {
         gc.setEnableCache(true);// XML 二级缓存
         gc.setBaseResultMap(true);// XML ResultMap
         gc.setBaseColumnList(true);// XML columList
-        gc.setAuthor("chen");// 作者
+        gc.setAuthor("");// 作者
 
         // 自定义文件命名，注意 %s 会自动填充表实体属性！
         gc.setControllerName("%sContrroller");
@@ -35,15 +35,15 @@ public class CodeGeneration {
         dsc.setDbType(DbType.MYSQL);
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("root");
-        dsc.setUrl("jdbc:mysql://localhost:3306/project411");
+        dsc.setPassword("Chen982973");
+        dsc.setUrl("jdbc:mysql://rm-bp1z0472oxzye7f00mo.mysql.rds.aliyuncs.com:3306/project411");
         mpg.setDataSource(dsc);
 
         // 策略配置
         StrategyConfig strategy = new StrategyConfig();
         //strategy.setTablePrefix(new String[] { "" });// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
-        strategy.setInclude(new String[] { "user" }); // 需要生成的表
+        strategy.setInclude(new String[] { "area","dormitory","dorpay","dorpayment" ,"perpayment","personinfo","userauth"}); // 需要生成的表
         strategy.setSuperServiceClass(null);
         strategy.setSuperServiceImplClass(null);
         strategy.setSuperMapperClass(null);
@@ -54,10 +54,10 @@ public class CodeGeneration {
         pc.setParent("com.swu.chen");
         pc.setController("controller");
         pc.setService("service");
-        pc.setServiceImpl("serviceImpl");
+        pc.setServiceImpl("service.serviceImpl");
         pc.setMapper("mapper");
         pc.setEntity("entity");
-        pc.setXml("xml");
+        pc.setXml("mapper.xml");
         mpg.setPackageInfo(pc);
 
         // 执行生成
