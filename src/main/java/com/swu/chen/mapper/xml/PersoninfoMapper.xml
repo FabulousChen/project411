@@ -11,8 +11,8 @@
         <result column="name" property="name" />
         <result column="sex" property="sex" />
         <result column="college" property="college" />
-        <result column="grade" property="grade" />
-        <result column="class" property="class" />
+        <result column="the_grade" property="theGrade" />
+        <result column="the_class" property="theClass" />
         <result column="student_id" property="studentId" />
         <result column="dormitory_id" property="dormitoryId" />
         <result column="create_time" property="createTime" />
@@ -22,7 +22,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, name, sex, college, grade, class, student_id AS studentId, dormitory_id AS dormitoryId, create_time AS createTime, last_edit_time AS lastEditTime, is_delete AS isDelete
+        id, name, sex, college, the_grade AS theGrade, the_class AS theClass, student_id AS studentId, dormitory_id AS dormitoryId, create_time AS createTime, last_edit_time AS lastEditTime, is_delete AS isDelete
     </sql>
 
 </mapper>

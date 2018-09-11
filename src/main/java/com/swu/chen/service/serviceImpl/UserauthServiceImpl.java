@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author 123
- * @since 2018-09-10
+ * @since 2018-09-11
  */
 @Service
 public class UserauthServiceImpl extends ServiceImpl<UserauthMapper, Userauth> implements UserauthService {

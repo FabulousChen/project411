@@ -15,7 +15,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author 123
- * @since 2018-09-10
+ * @since 2018-09-11
  */
 public class Personinfo extends Model<Personinfo> {
 
@@ -38,11 +38,13 @@ public class Personinfo extends Model<Personinfo> {
     /**
      * 年级
      */
-    private String grade;
+    @TableField("the_grade")
+    private String theGrade;
     /**
      * 班级
      */
-    private String class;
+    @TableField("the_class")
+    private String theClass;
     /**
      * 学号
      */
@@ -99,20 +101,20 @@ public class Personinfo extends Model<Personinfo> {
         this.college = college;
     }
 
-    public String getGrade() {
-        return grade;
+    public String getTheGrade() {
+        return theGrade;
     }
 
-    public void setGrade(String grade) {
-        this.grade = grade;
+    public void setTheGrade(String theGrade) {
+        this.theGrade = theGrade;
     }
 
-    public String getClass() {
-        return class;
+    public String getTheClass() {
+        return theClass;
     }
 
-    public void setClass(String class) {
-        this.class = class;
+    public void setTheClass(String theClass) {
+        this.theClass = theClass;
     }
 
     public Integer getStudentId() {
@@ -167,8 +169,8 @@ public class Personinfo extends Model<Personinfo> {
         ", name=" + name +
         ", sex=" + sex +
         ", college=" + college +
-        ", grade=" + grade +
-        ", class=" + class +
+        ", theGrade=" + theGrade +
+        ", theClass=" + theClass +
         ", studentId=" + studentId +
         ", dormitoryId=" + dormitoryId +
         ", createTime=" + createTime +

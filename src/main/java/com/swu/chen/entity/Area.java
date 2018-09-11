@@ -14,7 +14,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author 123
- * @since 2018-09-10
+ * @since 2018-09-11
  */
 public class Area extends Model<Area> {
 
