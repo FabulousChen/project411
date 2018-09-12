@@ -1,15 +1,38 @@
 package com.swu.chen.Util.DTO;
 
-import lombok.Data;
-
-@Data
 public class UserDto {
-    private Long id;
 
-    private String name;
+    private Integer id;
+    /**
+     * 用户名
+     */
+    private String userName;
+    /**
+     * 密码
+     */
+    private String password;
 
-    private Integer age;
+    public Integer getId() {
+        return id;
+    }
 
-    private String email;
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

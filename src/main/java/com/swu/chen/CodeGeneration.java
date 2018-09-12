@@ -43,7 +43,7 @@ public class CodeGeneration {
         StrategyConfig strategy = new StrategyConfig();
         //strategy.setTablePrefix(new String[] { "" });// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
-        strategy.setInclude(new String[] { "area","dormitory","dorpay","dorpayment" ,"perpayment","personinfo","userauth"}); // 需要生成的表
+        strategy.setInclude(new String[] { "user","pick_information","lose_information"}); // 需要生成的表
         strategy.setSuperServiceClass(null);
         strategy.setSuperServiceImplClass(null);
         strategy.setSuperMapperClass(null);

@@ -2,14 +2,39 @@ package com.swu.chen.Util.VO;
 
 import lombok.Data;
 
-@Data
+
 public class UserVo {
-    private Long id;
+    private Integer id;
+    /**
+     * 用户名
+     */
+    private String userName;
+    /**
+     * 密码
+     */
+    private String password;
 
-    private String name;
+    public Integer getId() {
+        return id;
+    }
 
-    private Integer age;
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-    private String email;
+    public String getUserName() {
+        return userName;
+    }
 
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

@@ -11,11 +11,11 @@ import org.springframework.stereotype.Controller;
  * </p>
  *
  * @author 123
- * @since 2018-09-11
+ * @since 2018-09-12
  */
 @Controller
-@RequestMapping("/dormitory")
-public class DormitoryContrroller {
+@RequestMapping("/pickInformation")
+public class PickInformationContrroller {
 
 }
 

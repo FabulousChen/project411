@@ -1,6 +1,6 @@
 package com.swu.chen.mapper;
 
-import com.swu.chen.entity.Area;
+import com.swu.chen.entity.User;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * </p>
  *
  * @author 123
- * @since 2018-09-11
+ * @since 2018-09-12
  */
-public interface AreaMapper extends BaseMapper<Area> {
+public interface UserMapper extends BaseMapper<User> {
 
 }
